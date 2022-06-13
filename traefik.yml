@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   traefik:
-    image: traefik:latest
+    image: traefik:v2.7
     deploy:
       placement:
         constraints:
@@ -44,7 +44,7 @@ services:
       - traefik-public
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - "/home/bruno/acme.json:/etc/traefik/acme/acme.json"
+      - "/opt/traefik/acme.json:/etc/traefik/acme/acme.json"
 
 networks:
   traefik-public:
