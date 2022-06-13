@@ -29,10 +29,10 @@ services:
       - "--certificatesresolvers.le.acme.storage=/etc/traefik/acme/acme.json"
       - "--certificatesresolvers.le.acme.httpchallenge.entrypoint=http"
 
-      - "--traefikLog.filePath=/tmp/logs/traefik.log"
-      - "--accessLog.filePath=/tmp/logs/access.log"
-      - "--logLevel=DEBUG"
-      - "--accessLog"
+     # - "--traefikLog.filePath=/tmp/logs/traefik.log"
+     # - "--accessLog.filePath=/tmp/logs/access.log"
+     # - "--logLevel=DEBUG"
+     # - "--accessLog"
     ports:
       - "80:80"
       - "443:443"
