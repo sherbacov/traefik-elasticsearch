@@ -18,9 +18,9 @@ services:
         - "traefik.http.middlewares.test-auth.basicauth.users=test:$$apr1$$H6uskkkW$$IgXLP6ewTrSuBkTrqE8wj/"
     command:
       - "--api"
-      - "--docker"
-      - "--docker.watch"
-      - "--docker.swarmmode"
+      # - "--docker"
+      # - "--docker.watch"
+      # - "--docker.swarmmode"
       # - "--docker.domain=traefik"
       
       - "--entrypoints.http.address=:80"
