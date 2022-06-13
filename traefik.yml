@@ -20,9 +20,8 @@ services:
       - "--api"
       # - "--docker"
       # - "--docker.watch"
-      # - "--docker.swarmmode"
       # - "--docker.domain=traefik"
-      
+      - "--providers.docker=true"
       - "--entrypoints.http.address=:80"
       - "--entrypoints.https.address=:443"
       - "--certificatesresolvers.le.acme.email=docker-le@sherbacov.com"
