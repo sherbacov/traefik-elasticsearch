@@ -32,7 +32,6 @@ services:
       - "--defaultentrypoints=http,https"
       - "--traefikLog.filePath=/tmp/logs/traefik.log"
       - "--accessLog.filePath=/tmp/logs/access.log"
-      - "--acme.acmelogging=true"
       - "--logLevel=DEBUG"
       - "--accessLog"
     ports:
