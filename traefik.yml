@@ -27,10 +27,7 @@ services:
       - "--certificatesresolvers.le.acme.email=docker-le@sherbacov.com"
       - "--certificatesresolvers.le.acme.storage=/etc/traefik/acme/acme.json"
       - "--certificatesresolvers.le.acme.httpchallenge.entrypoint=http"
-
-
-
-- "--serversTransport.insecureSkipVerify=true"
+      - "--serversTransport.insecureSkipVerify=true"
 
      # - "--traefikLog.filePath=/tmp/logs/traefik.log"
      # - "--accessLog.filePath=/tmp/logs/access.log"
