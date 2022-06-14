@@ -25,6 +25,7 @@ services:
       - "--entrypoints.http.address=:80"
       - "--entrypoints.https.address=:443"
       - "--entrypoints.fleet.address=:8220"
+      - "--entrypoints.es.address=:9200"      
       - "--certificatesresolvers.le.acme.email=docker-le@sherbacov.com"
       - "--certificatesresolvers.le.acme.storage=/etc/traefik/acme/acme.json"
       - "--certificatesresolvers.le.acme.httpchallenge.entrypoint=http"
@@ -39,6 +40,7 @@ services:
       - "443:443"
       - "8080:8080"
       - "8220:8220"
+      - "9200:9200"      
     networks:
       - traefik-public
     volumes:
