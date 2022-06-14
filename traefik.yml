@@ -48,6 +48,7 @@ services:
       - "/opt/traefik/acme.json:/etc/traefik/acme/acme.json"
 
 networks:
+  elastic_default:
   traefik-public:
     driver: bridge
     
